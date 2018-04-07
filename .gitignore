@@ -1,0 +1,5 @@
+logs
+exports
+black_point/__pycache__
+black_point/spiders/__pycache__
+black_point/utils/__pycache__
