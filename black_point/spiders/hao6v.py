@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
-import scrapy
-import re
-import sys
-import logging
+import scrapy, re, sys, logging
 from os import path
 from urllib import parse
 from scrapy.http import Request
 from black_point.items import Hao6vItem
-from black_point.utils.sysutils import getMd5
+from black_point.utils.sysutils import get_md5
 
 class Hao6vSpider(scrapy.Spider):
     name = 'hao6v'
@@ -102,7 +99,7 @@ class Hao6vSpider(scrapy.Spider):
         
         hao6vItem = Hao6vItem()
         hao6vItem["url"] = response.url
-        hao6vItem["url_md5"] = getMd5(response.url)
+        hao6vItem["url_md5"] = get_md5(response.url)
         for (key, value) in parsed_dict.items():
             hao6vItem[key] = value
         

@@ -68,7 +68,7 @@ ITEM_PIPELINES = {
     #'black_point.pipelines.BlackPointPipeline': 300,
     #'black_point.pipelines.JsonPipeline': 1,
     #'black_point.pipelines.MysqlPipeline': 2,
-    #'black_point.pipelines.MysqlTwistedPipline': 3,
+    'black_point.pipelines.MysqlTwistedPipline': 3,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -96,9 +96,15 @@ ITEM_PIPELINES = {
 #LOG_LEVEL="DEBUG"
 #LOG_ENABLED = True
 
-MYSQL_HOST = "www.liaowei.net.cn"
-MYSQL_DBNAME = "black_point"
-MYSQL_USER = "root"
-MYSQL_PASSWORD = "XXXX"
+ZHIHU_USERNAME = "+xxxxx"
+ZHIHU_PASSWORD = "xxxxx"
+
+MYSQL_HOST = "xxxxx"
+MYSQL_DBNAME = "xxxxx"
+MYSQL_USER = "xxxxx"
+MYSQL_PASSWORD = "xxxxx"
 MYSQL_CHARSET = "utf8"
 #MYSQL_PASSWORD = ""
+
+SQL_DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"
+SQL_DATE_FORMAT = "%Y-%m-%d"
